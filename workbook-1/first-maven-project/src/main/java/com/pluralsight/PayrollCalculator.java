@@ -15,6 +15,12 @@ public class PayrollCalculator {
         System.out.print("Enter pay rate");
         payRate = myScanner.nextFloat();
         System.out.print(hours * payRate);
+        if(hours > 40); {
+            payRate = (float) (payRate * 1.5);
+        } if(hours> 40); {
+            System.out.println(" You had overtime!");
+
+        }
 
         }
     }

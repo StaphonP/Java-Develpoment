@@ -15,16 +15,22 @@ public class BasicCalculator{
     sNum= myScanner.nextInt();
     System.out.print("(A)dd, (S)ubtract, (M)ultiply, or (D)ivide?: ");
     math = myScanner.next();
+    double answer = 0;
 
 
         if(math.equals("A")); {
+          answer = (fNum + sNum);
           System.out.println(fNum + sNum);
-        }  if(math.equals("S"));{
+
+        }   if(math.equals("S"));{
+            answer = (fNum - sNum);
             System.out.println(fNum - sNum);
         }   if(math.equals("M"));{
+            answer = (fNum * sNum);
             System.out.println(fNum * sNum);
-        }   if(math == "D"); {
-            System.out.println(fNum / sNum);
+        }   if (math.equals("D")); {
+            answer = (fNum / sNum);
+            System.out.print(fNum / sNum);
         }
 
 

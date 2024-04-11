@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+
+
 public class PracticeOperations {
     public static void main(String[] args) {
         String firstName = "Staphon";
@@ -7,7 +9,7 @@ public class PracticeOperations {
         String lastName = "Peterson";
         String fullName = "firstName" + "middleNAme" + "lastName";
         //Full Name Result
-        System.out.println("fullName");
+        System.out.println(fullName);
         double newCar = 150;
         double carTax = 10;
         double gasBill = 5;
@@ -28,6 +30,28 @@ public class PracticeOperations {
         System.out.println(accumulation);
 
     }
-}
 
+    public static void practice(String[] arg) {
+        double price = 0;
+        double age = 0;
+        if (age <= 10) {
+            price = 5.00;
+        } else if (age < 18) {
+            price = 10.00;
+        } else if (age <= 50) {
+            price = 20.00;
+        } else {
+            price = 15.00;
+        }
+        System.out.println("Price of admission: ");
+
+
+    }
+
+    public static void Generations(String[] arg) {
+
+
+
+    }
+}
 
