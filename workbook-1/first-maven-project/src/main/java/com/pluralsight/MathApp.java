@@ -41,7 +41,7 @@ public class MathApp {
         double y2 = 50;
         double distance = Math.sqrt((x2 - x1) * (x2-x1) + (y2 - y1) * (y2 - y1));
         System.out.println("The distance from these two points are: " + String.format("%.2f",distance));
-        
+
 
 
 
