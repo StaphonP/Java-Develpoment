@@ -24,12 +24,12 @@ public class Reservation {
     }
 
     public double getPrice() {
-        if(roomType.equals("king")){
+        if(roomType.equals("Suite")){
             if(isWeekend)
                 return 139.00*1.10;
             return 139.00;
         }
-        else if(roomType.equals("double")){
+        else if(roomType.equals("Room")){
             if(isWeekend)
                 return 124.00*1.10;
             return 124.00;
