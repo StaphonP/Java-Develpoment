@@ -1,7 +1,7 @@
 package com.pluralsight;
 
-public class Book {
+public class Main {
     public static void main(String[] args) {
 
-
+    }
 }

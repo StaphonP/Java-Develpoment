@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Neighborhood-Library" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/financial-calculators" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workbook-1/CellPhoneService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workbook-2/CellPhoneService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workbook-2/com/pluralsight/LoopingExercises" vcs="Git" />
+  </component>
+</project>

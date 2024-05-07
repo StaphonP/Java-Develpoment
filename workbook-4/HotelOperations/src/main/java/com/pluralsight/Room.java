@@ -58,7 +58,7 @@ public class Room {
         return numberOfBeds;
     }
     public boolean checkIn(){
-return isDirty && isOccupied;
+       return isDirty = true;
     }
     public boolean checkOut(){
         return cleanRoom() && !isOccupied;

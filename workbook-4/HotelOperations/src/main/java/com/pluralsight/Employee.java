@@ -1,8 +1,10 @@
 package com.pluralsight;
 
 import java.time.Duration;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.chrono.ChronoLocalDateTime;
 
 public class Employee {
     private String employeeId;
@@ -94,12 +96,19 @@ public class Employee {
             isPunchedIn = false;
             System.out.println("Punched out at: " + punchOutTime);
             double hours = Duration.between(punchInTime, punchOutTime).toHours();
-            System.out.println("Hours worked: " + hours);
+            System.out.println("Punched in at: "+punchInTime+"\n Punched out at: "+punchOutTime+
+                    "\n Hours Worked: "+ hours);
         } else {
             System.out.println("Can't punch out. Not punched in.");
         }
-    }
 
+    }
+public String getPunchInTime(){
+        return String.valueOf(punchInTime);
+}
+public String getPunchOutTime(){
+        return String.valueOf(punchOutTime);
+}
     
     }
 
