@@ -8,32 +8,40 @@ private int bookedSuites;
 private int bookedRooms;
     public Hotel(String name,int numberOfSuites,int numberOfRooms){
         this.name = name;
-        this.numberOfRooms = 12;
-        this.numberOfSuites =  10;
+        this.numberOfRooms = 0;
+        this.numberOfSuites =  0;
     }
     public Hotel(String name,int numberOfSuites,int numberOfRooms,int bookedSuites,int bookedRooms){
         this.name = name;
-        this.numberOfRooms = 12;
-        this.numberOfSuites = 10;
+        this.numberOfRooms = 0;
+        this.numberOfSuites = 0;
         this.bookedSuites = 0;
         this.bookedRooms = 0;
     }
     public boolean bookRoom(int rooms, boolean isSuite){
-        if(rooms<getAvailableRooms()){
-            numberOfRooms--;
-        } if(isSuite) {
-            if(getAvailableSuites()>rooms) {
-            numberOfSuites--;
-            }
-        } else{
-            return false;}
-           return true;
+       if(isSuite){
+           if((numberOfSuites > bookedSuites)&& (numberOfRooms <= numberOfSuites - bookedSuites)){
+               bookedSuites += numberOfSuites;
+               return true;
+
+           } else {
+               return false;
+           }
+       } else{
+           if(numberOfRooms<=numberOfRooms - bookedRooms){
+               bookedRooms += numberOfRooms;
+               return true;
+           }else{
+               return false;
+           }
+       }
     }
+
     public int getAvailableSuites(){
-        return numberOfSuites;
+        return numberOfSuites - bookedSuites;
     }
     public int getAvailableRooms(){
-        return numberOfRooms;
+        return numberOfRooms - bookedRooms;
     }
 
 }
