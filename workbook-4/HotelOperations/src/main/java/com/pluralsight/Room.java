@@ -6,13 +6,36 @@ public class Room {
     private boolean isOccupied;
     private boolean isDirty;
     private boolean isAvailable;
+    private String roomType;
 
-    public Room(int numberOfBeds, double price, boolean isOccupied, boolean isDirty, boolean isAvailable) {
+    @Override
+    public String toString() {
+        return "Room{" +
+                "numberOfBeds=" + numberOfBeds +
+                ", price=" + price +
+                ", isOccupied=" + isOccupied +
+                ", isDirty=" + isDirty +
+                ", isAvailable=" + isAvailable +
+                ", roomType='" + roomType + '\'' +
+                '}';
+    }
+
+    public Room(int numberOfBeds, String roomType, boolean isOccupied, boolean isDirty, boolean isAvailable) {
         this.numberOfBeds = numberOfBeds;
-        this.price = price;
+       // this.price = price;
         this.isOccupied = isOccupied;
         this.isDirty = isDirty;
         this.isAvailable = isAvailable;
+        this.roomType = roomType;
+    }
+    public Room(){
+        this.numberOfBeds = 0;
+       // this.price = 0;
+        this.roomType = "";
+        this.isOccupied = false;
+        this.isDirty = false;
+        this.isAvailable = false;
+
     }
 
     public void setNumberOfBeds(int numberOfBeds) {
@@ -65,5 +88,12 @@ public class Room {
     }
     public boolean cleanRoom(){
         return !isDirty;
+    }
+    public String getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
     }
 }

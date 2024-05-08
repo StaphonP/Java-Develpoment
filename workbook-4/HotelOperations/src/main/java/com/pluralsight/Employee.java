@@ -21,6 +21,13 @@ public class Employee {
         this.payRate = payRate;
         this.hours = hours;
     }
+    public Employee(){
+        this.employeeId = "";
+        this.name = "";
+        this.department = "";
+        this.payRate = 0.0;
+        this.hours = 0.0;
+    }
 
     public String getEmployeeId() {
         return employeeId;
