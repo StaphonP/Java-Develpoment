@@ -65,7 +65,7 @@ public class DealershipFileManager {
         //Create reference ArrayList that gets All current vehicles from dealershio.
         ArrayList<Vehicle> vehicles = dealership.getAllVehicles();
         //Create New Writer
-        BufferedWriter writer = new BufferedWriter(new FileWriter("inventory.csv", false)); //Create new file that will overwrite when written to
+        BufferedWriter writer = new BufferedWriter(new FileWriter("inventory.csv", true)); //Create new file that will overwrite when written to
         //Write Headers
         writer.write(dealership.getName() + "|" + dealership.getPhone() + "|" + dealership.getAddress() + "\n");
         //Write vehicle using getters
