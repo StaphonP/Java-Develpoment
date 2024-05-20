@@ -38,7 +38,7 @@ public class House extends Asset {
     }
 
     @Override
-    public double getValue(){
-        return 0;
+    public void getValue(){
+
     }
 }
