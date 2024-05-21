@@ -3,12 +3,12 @@ package com.pluralsight;
 public class CreditCard implements Valuable {
    private String name;
    private String accountNum;
-   private double amount;
+   private double balance;
 
-   public CreditCard(String name, String accountNum, double amount) {
+   public CreditCard(String name, String accountNum, double balance) {
       this.name = name;
       this.accountNum = accountNum;
-      this.amount = amount;
+      this.balance = balance;
    }
 
    public String getName() {
@@ -27,25 +27,25 @@ public class CreditCard implements Valuable {
       this.accountNum = accountNum;
    }
 
-   public double getAmount() {
-      return amount;
+   public double getBalance() {
+      return balance;
    }
 
-   public void setAmount(double amount) {
-      this.amount = amount;
+   public void setBalance() {
+      this.balance = balance;
    }
 
    public void charge(double amount){
-
+   balance -= amount;
    }
 
    public void pay(double amount){
-
+balance += amount;
    }
 
 
    @Override
-   public void getValue() {
-
+   public double getValue() {
+   return balance;
    }
 }

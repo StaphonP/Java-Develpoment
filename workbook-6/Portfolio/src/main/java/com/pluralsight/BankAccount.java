@@ -36,7 +36,9 @@ public class BankAccount implements Valuable {
     }
 
     public void withdraw(double amount){
-
+     balance -= amount;
+        System.out.println(amount + " was just withdrawn");
+        System.out.println("New Balance: " + balance);
     }
 
     public void deposit(double amount){
@@ -50,7 +52,7 @@ public class BankAccount implements Valuable {
     }
 
     @Override
-    public void getValue() {
-
+    public double getValue() {
+    return balance;
     }
 }

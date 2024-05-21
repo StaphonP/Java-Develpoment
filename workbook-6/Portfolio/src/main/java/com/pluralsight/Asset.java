@@ -24,8 +24,10 @@ public abstract class Asset implements Valuable {
         this.marketValue = marketValue;
     }
 
-    public void getValue(double marketValue){
-
+    public double getValue(double marketValue){
+    return marketValue;
     }
+
+    public abstract double getValue();
 
 }

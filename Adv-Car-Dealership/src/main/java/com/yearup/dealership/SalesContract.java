@@ -57,7 +57,7 @@ public class SalesContract extends Contract {
 
     @Override
     public double getMonthlyPayment() {
-return
+
     }
 
 }

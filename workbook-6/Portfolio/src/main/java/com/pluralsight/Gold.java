@@ -16,7 +16,7 @@ public class Gold extends Asset {
     }
 
     @Override
-    public void getValue(){
-
+    public double getValue(){
+    return weight;
     }
 }

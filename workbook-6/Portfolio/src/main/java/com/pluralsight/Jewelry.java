@@ -9,15 +9,17 @@ public class Jewelry extends Asset {
     }
 
     public double getKarat() {
+
         return karat;
     }
 
     public void setKarat(double karat) {
+
         this.karat = karat;
     }
 
     @Override
-    public void getValue(){
-
+    public double getValue(double marketValue){
+    return marketValue;
     }
 }
