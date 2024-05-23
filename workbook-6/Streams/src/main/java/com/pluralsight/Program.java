@@ -27,7 +27,7 @@ people.add(person9);
 people.add(person10);
 
 //Step1
-     /*   Scanner input = new Scanner(System.in);
+       Scanner input = new Scanner(System.in);
         System.out.println("What name would you like to search for? First(1) or Last(2)");
         int command = input.nextInt();
         if(command == 1){
@@ -47,10 +47,10 @@ people.add(person10);
                 }
             }
         }
-*/
+
         //Step2
         //Calculate average age
-    /*    int totalAge = 0;
+       int totalAge = 0;
         //Add all ages up
         for(Person person : people){
             totalAge += person.getAge();
@@ -58,7 +58,7 @@ people.add(person10);
         //Divide total age n=by the size of the list
         int averageAge = totalAge / people.size();
         System.out.println("Average: " + averageAge);
-*/
+
         //Step3
         //Calculate and Display the oldest person in the list
         Person oldest = Collections.max(people, Comparator.comparingInt(Person::getAge));
