@@ -16,8 +16,8 @@ public class MainApp
         World world = new World(200, 200);
         Turtle turtle = new Turtle(world,-100, -100);
         
-        int width = 200;
-        int height = 200;
+        int width = 100;
+        int height = 100;
 
         // calculate the hypotenuse (diagonal)
         // a2 + b2 = c2
@@ -27,13 +27,13 @@ public class MainApp
 
 
         turtle.setPenWidth(3);
-        turtle.setColor(Color.GREEN);
+        turtle.setColor(Color.RED);
 
         turtle.turnRight(45);
         turtle.forward(hypotenuse);
 
         turtle.penUp();
-        turtle.goTo(100, 100);
+        turtle.goTo(50, 100);
         turtle.turnRight(90);
 
         turtle.penDown();
